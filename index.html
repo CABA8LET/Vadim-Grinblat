@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=UoqMunThenKhung&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #636363;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+            font-size: 31px;
+            font-weight: 670;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        nav {
+            background: #111827;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #374151;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+
+        .services,
+        .portfolio,
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            background-color: #1f2937;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logotip-vadim-grinblat-removebg-preview.png" alt="">
+        <p>Строительство и ремонт</p>
+    </header>
+    <nav>
+        <a href="#aboutUS">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Наши работы</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="">Контакты</a>
+    </nav>
+    <section id="aboutUS">
+        <h2>О нас</h2>
+        <p>Компания <strong>Vadim Grinblat</strong> — это более 10 лет опыта в строительстве, ремонте и отделке
+            помещений. Мы создаём комфортные пространства, в которых хочется жить и работать. Руководитель компании —
+            Вадим, профессионал с инженерным мышлением и душой мастера.</p>
+    </section>
+    <section id="services">
+        <h2>Наши Услуги</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Капитальный ремонт</h3>
+                <p>Комплексный ремонт квартир, офисов и коттеджей с заменой всех систем.</p>
+            </div>
+            <div class="card">
+                <h3>Отделочные работы</h3>
+                <p>Штукатурка, покраска, укладка плитки, ламината, обои, декоративные покрытия.</p>
+            </div>
+            <div class="card">
+                <h3>Строительство под ключ</h3>
+                <p>Возведение домов, бань, хозяйственных построек с нуля.</p>
+            </div>
+            <div class="card">
+                <h3>Сантехника и электрика</h3>
+                <p>Полный монтаж водоснабжения, отопления и электрики с гарантией.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Наши работы</h2>
+        <div class="portfolio">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1msI9hAMyb-9PR2NLPy8FLvrVpm4HJ1HOQ&s"
+                    alt="">
+                <p>Ремонт квартиры 80м² — современный стиль, тёплый пол, встроенная мебель</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bYeO26pFq4_IdmNE0RWZwNi9o-tBANnIng&s"
+                    alt="">
+                <p>Коттедж в пригороде — строительство от фундамента до отделки</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYA-86nF8d8WQu8GNs7RfE1Iw6u-iI2l7wg&s"
+                    alt="">
+                <p>Офис 120м² — стеклянные перегородки, инженерные системы, освещение</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Отзывы клиентов</h2>
+        <div class="testimonials">
+            <div class="card">
+                <p>Хочу выразить огромную благодарность Вадиму и всей его команде за безупречную работу! Ремонт прошёл
+                    быстро, аккуратно и в точности по плану. Очень довольны результатом!</p>
+                <strong>— Мария П.</strong>
+            </div>
+            <div class="card">
+                <p>Спасибо Вадиму за качественный ремонт и внимательное отношение к деталям. Все просьбы были учтены, а
+                    работа выполнена на отлично!</p>
+                <strong>— Татьяна Р.</strong>
+            </div>
+            <div class="card">
+                <p>Ремонт выполнен на высшем уровне. Порадовал профессионализм и чёткие сроки. Команда Вадима —
+                    настоящие мастера своего дела. Рекомендую!</p>
+                <strong>— С. Романов</strong>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Контакты</h2>
+        <p><strong>Телефон:</strong> +998 XX XXX-XX-XX</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/998XXXXXXXXX">Написать</a></p>
+        <p><strong>Telegram:</strong> <a href="https://t.me/yourusername">@yourusername</a></p>
+        <p><strong>Адрес:</strong> г. Ташкент, ул. Примерная, 12</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Vadim Grinblat — Строительство и ремонт. Все права защищены.</p>
+    </footer>
+    <script></script>
+</body>
+
+</html>
